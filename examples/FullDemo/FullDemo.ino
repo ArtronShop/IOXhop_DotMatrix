@@ -44,4 +44,7 @@ void loop() {
   dot.scrollInRight("K210 STM32", 50);
   delay(2000);
   dot.scrollOutBottom("K210 STM32", 50);
+
+  dot.scrollLeftToRight("ATSAMD21", 50, 1000);
+  dot.scrollRightToLeft("AIoT , IoT, MCU", 50);
 }

@@ -350,6 +350,11 @@ void IOXhop_DotMatrix::show() {
     }
 }
 
+void IOXhop_DotMatrix::clear() {
+    memset(bufferDisplay, 0, 8 * display_number);
+    show();
+}
+
 int IOXhop_DotMatrix::calcTextWidth(String text) {
     return text.length() * 6;
 }
@@ -461,4 +466,16 @@ void IOXhop_DotMatrix::scrollOutBottom(String text, int speed) {
         showText(text, top, (((display_number * 8 / 2) - (textWidth / 2)) - 1));
         delay(speed);
     }
+}
+
+void IOXhop_DotMatrix::scrollLeftToRight(String text, int speed, int pause) {
+    scrollInLeft(text, speed);
+    delay(pause);
+    scrollOutRight(text, speed);
+}
+
+void IOXhop_DotMatrix::scrollRightToLeft(String text, int speed, int pause) {
+    scrollInRight(text, speed);
+    delay(pause);
+    scrollOutLeft(text, speed);
 }

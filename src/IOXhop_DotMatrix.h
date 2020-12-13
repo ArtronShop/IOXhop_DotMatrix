@@ -27,17 +27,20 @@ class IOXhop_DotMatrix {
 
         void invertColor(bool showOnDisplay = true) ;
         void show() ;
+        void clear() ;
         void showText(String text, int top = 0, int left = 0, bool invert = false) ;
         void showTextCenter(String text) ;
 
-        void scrollInLeft(String text, int speed) ;
-        void scrollOutLeft(String text, int speed) ;
-        void scrollInRight(String text, int speed) ;
-        void scrollOutRight(String text, int speed) ;
-        void scrollInTop(String text, int speed) ;
-        void scrollOutTop(String text, int speed) ;
-        void scrollInBottom(String text, int speed) ;
-        void scrollOutBottom(String text, int speed) ;
+        void scrollInLeft(String text, int speed = 50) ;
+        void scrollOutLeft(String text, int speed = 50) ;
+        void scrollInRight(String text, int speed = 50) ;
+        void scrollOutRight(String text, int speed = 50) ;
+        void scrollInTop(String text, int speed = 50) ;
+        void scrollOutTop(String text, int speed = 50) ;
+        void scrollInBottom(String text, int speed = 50) ;
+        void scrollOutBottom(String text, int speed = 50) ;
+        void scrollLeftToRight(String text, int speed = 50, int pause = 0) ;
+        void scrollRightToLeft(String text, int speed = 50, int pause = 0) ;
 
 };
 
