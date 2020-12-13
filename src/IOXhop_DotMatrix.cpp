@@ -1,5 +1,6 @@
 #include "IOXhop_DotMatrix.h"
 
+// Font code from https://gitlab.com/kidbright/kidbright32/-/blob/master/kidbright32/src/ht16k33.cpp
 const unsigned char font_6_8[] = {
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00,  // 0x00
   0x00, 0x7c, 0xa2, 0x8a, 0xa2, 0x7c,  // 0x01
