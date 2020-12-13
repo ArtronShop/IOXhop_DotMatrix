@@ -2,6 +2,12 @@
 
 Very easy use Dot Matrix MAX7219 show text with animation
 
+# Wiring
+
+This library develop for Arduino-ESP32 so this schematic i use for test
+
+![](https://cz.lnwfile.com/_/cz/_raw/ub/o9/2w.png)
+
 # Example
 
 ```c++
